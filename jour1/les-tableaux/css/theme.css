@@ -11,3 +11,7 @@ th tr{
 tr td{
     text-align: right;
 }
+
+.main{
+    background: #fff;
+}
