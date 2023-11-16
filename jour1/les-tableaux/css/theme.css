@@ -1,2 +1,13 @@
 /* Le code CSS de la démo */
 
+table{
+    border-collapse: collapse;
+}
+
+th tr{
+    text-align: center;
+}
+
+tr td{
+    text-align: right;
+}
