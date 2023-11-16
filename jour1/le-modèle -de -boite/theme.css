@@ -1,0 +1,33 @@
+.boite-1{
+    
+}
+
+.boite-2{   
+    margin: 2rem;
+}
+
+.boite-3{
+    padding: 2rem;
+}
+
+.boite-4{
+    padding: 2rem;
+    border: 5px solid #DD5735;
+}
+
+.boite-5{
+    padding: 2rem;
+    border: 5px solid #DD5735;
+    width: 500px;
+}
+
+.boite-6{
+    padding: 2rem;
+    border: 5px solid #DD5735;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+.box{
+    background-color: #ccc;
+}
