@@ -17,6 +17,10 @@
     background: #eee;
 }
 
+.img{
+    background-image: url(../ressources/large.jpg);
+}
+
 .repeat-1{
     background-image:url(../ressources/small.jpg);
     background-repeat:repeat;
@@ -35,4 +39,27 @@
 .repeat-4{
     background-image:url(../ressources/small.jpg);
     background-repeat: repeat-y;
+}
+
+.size-1{
+    background-image:url(../ressources/large.jpg);
+    background-size: contain;
+
+}
+
+.size-2{
+    background-image:url(../ressources/large.jpg);
+    background-size: cover;
+}
+
+.size-3{
+    background-image:url(../ressources/large.jpg);
+    background-size: 50%;
+
+}
+
+.size-4{
+    background-image:url(../ressources/large.jpg);
+    background-size: 80% 40%;
+
 }
