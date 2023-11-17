@@ -1,1 +1,33 @@
-/* Le code CSS de la démo */
+/* form */
+form{
+    padding: 1em 2em;
+}
+
+legend{
+    padding: 0 1em;
+    font-size: 1.8rem;
+}
+
+fieldset{
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset input{
+    padding: 1em;
+    border-color: rgba(0,0,0,0.2);
+}
+
+label{
+    border-color: rgba(0,0,0,0.2);
+    width: 30%;
+    padding: 0.5em;
+}
+
+input{
+    padding: 0.5em 1em;
+    font-size: 1.6rem;
+}
