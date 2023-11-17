@@ -1,0 +1,38 @@
+/* container*/
+.container{
+    background: #fff;
+}
+
+/* Taille div */
+.background{
+    padding: 2em;
+    background: teal;
+    max-width: 40em;
+    height: 20em;
+    color: #fff;
+}
+
+/* code */
+.code{
+    background: #eee;
+}
+
+.repeat-1{
+    background-image:url(../ressources/small.jpg);
+    background-repeat:repeat;
+}
+
+.repeat-2{
+    background-image:url(../ressources/small.jpg);
+    background-repeat:no-repeat;
+}
+
+.repeat-3{
+    background-image:url(../ressources/small.jpg);
+    background-repeat: repeat-x;
+}
+
+.repeat-4{
+    background-image:url(../ressources/small.jpg);
+    background-repeat: repeat-y;
+}
