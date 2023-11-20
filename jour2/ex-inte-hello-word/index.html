@@ -4,7 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Le template des démos du module 2 (sémantique + feuille de style commune en version 2)">
-	<title>Template module 2</title>
+	<title>Hello World</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/common-v2.css">
 	<link rel="stylesheet" href="css/theme.css">
 </head>
@@ -12,41 +15,48 @@
 <body>
 
 	<header class="header">
+		<p><a href="./index.html"><img src="./ressources/logo.png" alt="logo"></a></p>
+
 		<nav>
-			<p><img src="" alt=""></p>
 			<menu>
-				<li>Carnet de voyage</li>
-				<li>Quand partir ?</li>
-				<li>A propos</li>
-				<li>Me contacter</li>
+				<li><a href="#carnet-de-voyage">Carnet de voyage</a></li>
+				<li><a href="#quand-partir">Quand partir ?</a></li>
+				<li><a href="#a-propos">A propos</a></li>
+				<li><a href="#me-contacter">Me contacter</a></li>
 			</menu>
 		</nav>
 	</header>
 	<h1>Carnets de voyage</h1>
 	<main class="container">
 		<section>
+			<h2 id="carnet-de-voyage">Mes derniers voyages</h2>
 			<article>
-				<h2></h2>
-				<h3></h3>
-				<div>
-					<div><img src="" alt=""></div>
+				<h3>Vienne, Autriche</h3>
+				<div class="flex-1">
+					<div><img src="./ressources/vienne.jpg" alt="Vienne, Autriche"></div>
 					<div>
-						<p></p>
-						<button></button>
+						<p>Vienne est un mélange d’architecture fastueuse, de musique et de charme pittoresque.</p>
+						<p>Semblable à nulle autre, Vienne préserve intact son aspect historique d’origine marqué par des édifices fastueux datant de l’époque baroque et des débuts du XXème siècle.</p>
+						<p>La moitié de la ville est située sur le Danube et offre des parcs, la forêt viennoise et même des zones viticoles pour les loisirs.</p>
+						<button>En savoir plus</button>
 					</div>
 				</div>
 			</article>
 			<article>
-				<h3></h3>
-				<div>
-					<p></p>
-					<button></button>
+				<h3>Marrakech, Maroc</h3>
+				<div class="flex-2">
+					<div>
+					<p>Marrakech, est une ville située dans le centre du Maroc au pied des montagnes de l'Atlas. Marrakech est surnommée « la ville rouge » ou la « ville ocre » en référence à la couleur rouge d'une grande partie de ses immeubles et ses maisons.</p>
+					<p>Marrakech est une ville unique en son genre qui se distingue totalement du reste. Visiter Marrakech est une expérience qui stimulera tous vos sens : ses couleurs, ses saveurs et ses odeurs vous marqueront dès votre arrivée et vous accompagneront des semaines après votre retour.</p>
+					<button>En savoir plus</button>
 				</div>
-				<div><img src="" alt=""></div>
+				<div><img src="./ressources/marrakech.jpg" alt="Marrakech, Maroc"></div>
+				</div>
+				
 			</article>
 		</section>
 		<section class="">
-			<h2>Les meilleures saisons pour voyager</h2>
+			<h2 id="quand-partir">Les meilleures saisons pour voyager</h2>
 			<table>
 				<thead>
 					<tr>
@@ -85,37 +95,48 @@
 				</tbody>
 			</table>
 		</section>
-		<section>
-			<article></article>
-			<h2></h2>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
+		<section class="a-propos">
+			<h2 id="a-propos">A propos</h2>
+			<div class="a-propos-text">
+				<p>Je m'appelle Claire et j'aime les voyages et l'aventure.</p>
+				<p>C'est suite à un long tour du monde que j'ai changé de vie et que j'ai décidé de créer ce blog pour vous aider à voyager.</p>
+				<p>Ma passion pour le voyage est désormais devenu mon métier.</p>
+				<p>Vous pourrez trouver ici de l'inspiration et de nombreux conseils pour réduire votre budget voyages et pouvoir partir plus souvent.</p>
+			</div>
 		</section>
 		<section>
-			<article>
-				<h2></h2>
-				<address></address>
-				<p></p>
-				<p></p>
-				<h3></h3>
-				<form action="">
+			<h2 id="me-contacter">Me contacter</h2>
+			<div>
+				<address>31 Rue d'Auteuil, Paris 16ème</address>
+				<p><a href="mailto:claire@helloworld.com">claire@helloworld.com</a></p>
+				<p><a href="tel:+33601030507">06 01 03 05 07</a></p>
+				<h3>Formulaire de contact</h3>
+				<form class="flex-3" action="index.html" method="post">
 					<div>
-						<div><label for=""></label><input type="text" name="" id=""><label for=""></label><input type="email" name="" id=""><label for=""></label><input type="tel" name="" id=""></div>
-						<div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-						<div><button type="submit"></button></div>
+						<fieldset>
+							<label for="name"></label>
+							<input type="text" name="mail" id="name" placeholder="Votre nom">
+							<label for="mail"></label>
+							<input type="email" name="mail" id="mail" placeholder="Votre email">
+							<label for="tel" ></label>
+							<input type="tel" name="tel" id="tel" placeholder="Votre numéro de téléphone">
+						</fieldset>
+						<fieldset>
+							<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						</fieldset>
 					</div>
+						<div><button type="submit">Envoyer</button></div>
 				</form>
+				<p>Suivez-moi sur :</p>
 				<p></p>
-				<p></p>
-			</article>
+			</div>
 		</section>
 	</main>
 
 	<footer class="footer">
 		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="./logo-3wa.png"></a></p>
-		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>.&nbsp; Cet exercice a été réalisé par Christiane Dumont.</p>
+		<p>Images fournies par Pixabay.</p>
 	</footer>
 
 </body>

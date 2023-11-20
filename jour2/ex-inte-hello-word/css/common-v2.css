@@ -34,33 +34,34 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
-	font-family: sans-serif;
-	color: #555;
-	background-color: #eee;
+	font-family: 'Lato',sans-serif;
+	color: #333;
+	background-color: #fff;
 }
 
 /* Le titre principal d'un flux */
 h1 {
-	font-size: 4rem;
-	color: #DD5735;
+	font-size: 2.813rem;
+	color: #007eb3;
+	border-bottom: 0.063em dotted #007eb3;
+	word-spacing: 1rem;
+	text-align: center;
 }
 
 /* Le titre de second niveau  */
 h2 {
-	font-size: 3.2rem;
-	color: #333;
+	font-size: 1.875rem;
 }
 
 
 /* Le titre de troisème niveau */
 h3 {
-	font-size: 2.4rem;
+	font-size: 1.563rem;
 }
 
 /* Les liens */
 a {
 	text-decoration: none;
-	color: #DD5735;
 }
 
 /* Ajout d'un élément de décoration au survol */
@@ -74,11 +75,7 @@ main {
 	padding: 2em;
 }
 
-/* Les articles */
-article {
-	background-color: #fff;
-	padding: 1em;
-}
+
 
 /* *****************************************************************
 CONTAINER
@@ -86,7 +83,7 @@ CONTAINER
 
 /* Le container permet de limiter la largeur d'un contenu */
 .container {
-	max-width: 1100px; /* On donne une largeur au container */
+	max-width: 56.25em; /* On donne une largeur au container */
 	margin-left: auto; /* On centre son contenu */
 	margin-right: auto;
 }
@@ -97,15 +94,39 @@ MAIN LAYOUT
 
 /* L'entête de la page */
 .header {
-	padding: 1em;
 	text-align: center;
-	color: #999;
-	background-color: #444;
+	
 }
 
-/* Pas de marge pour le titre pricipal */
-.header h1 {
-	margin: 0;
+nav{
+	background: #007eb3;
+
+}
+
+menu li a, menu li a:link, menu li a:visited{
+	color: #fff;
+	text-decoration: none;
+
+}
+
+menu li a{
+	list-style: none;
+}
+
+/* background nav header */
+.header menu {
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	max-width: 56.25em;
+	list-style: none;
+	margin: 0 auto;
+	justify-content: space-around;
+	align-items: center;
+	height: 2.5em;
+
+
+
 }
 
 /* Le pied de page */
@@ -113,7 +134,7 @@ MAIN LAYOUT
 	padding: 2em;
 	text-align: center;
 	color: #fff;
-	background-color: #444;
+	background-color: #007eb3;
 }
 
 /* *****************************************************************

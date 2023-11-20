@@ -1,1 +1,65 @@
-/* Le code CSS de la démo */
+
+
+/* main */
+.container{
+    
+}
+
+.container a{
+    text-decoration: none;
+    color: #007eb3;
+}
+
+section{
+    margin: 1.875em 0;
+}
+
+.flex-1{
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid #eee;
+}
+
+.flex-1 img{
+    margin-right: 1em;
+}
+
+.flex-1 button{
+    background: #007eb3;
+    border-radius: 6px;
+    color: #fff;
+    height: 35px;
+    width: 110px;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.flex-2{
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid #eee;
+}
+
+.flex-2 img{
+    margin-left: 1em;
+}
+
+.flex-2 button{
+    background: #007eb3;
+    border-radius: 6px;
+    color: #fff;
+    height: 35px;
+    width: 110px;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.a-propos{
+    background-image: url(../ressources/fond.jpg);
+    background-size:contain;
+    background-repeat: M;
+}
+
+.a-propos-text{
+    width: 50%;
+}
