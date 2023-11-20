@@ -5,6 +5,18 @@
     
 }
 
+.rouge{
+    color: #f00;
+}
+
+.ocre{
+color: #CD8C56 ;
+}
+
+tbody tr:nth-child(odd){
+    background: #eee;
+}
+
 .container a{
     text-decoration: none;
     color: #007eb3;
@@ -56,10 +68,12 @@ section{
 
 .a-propos{
     background-image: url(../ressources/fond.jpg);
-    background-size:contain;
-    background-repeat: M;
+    background-size:cover;
+
 }
 
 .a-propos-text{
     width: 50%;
+    background: #fff;
+    margin: auto 20%;
 }
