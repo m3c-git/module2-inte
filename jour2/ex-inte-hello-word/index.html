@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Le template des démos du module 2 (sémantique + feuille de style commune en version 2)">
 	<title>Hello World</title>
+	<script src="https://kit.fontawesome.com/f1cf090775.js" crossorigin="anonymous" defer></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -27,8 +28,8 @@
 		</nav>
 	</header>
 	<h1>Carnets de voyage</h1>
-	<main class="container">
-		<section>
+	<main >
+		<section class="container">
 			<h2 id="carnet-de-voyage">Mes derniers voyages</h2>
 			<article>
 				<h3>Vienne, Autriche</h3>
@@ -55,7 +56,7 @@
 				
 			</article>
 		</section>
-		<section class="">
+		<section class="container">
 			<h2 id="quand-partir">Les meilleures saisons pour voyager</h2>
 			<table>
 				<thead>
@@ -96,45 +97,47 @@
 			</table>
 		</section>
 		<section class="a-propos">
-			<h2 id="a-propos">A propos</h2>
 			<div class="a-propos-text">
+				<h2 id="a-propos">A propos</h2>
 				<p>Je m'appelle Claire et j'aime les voyages et l'aventure.</p>
 				<p>C'est suite à un long tour du monde que j'ai changé de vie et que j'ai décidé de créer ce blog pour vous aider à voyager.</p>
 				<p>Ma passion pour le voyage est désormais devenu mon métier.</p>
 				<p>Vous pourrez trouver ici de l'inspiration et de nombreux conseils pour réduire votre budget voyages et pouvoir partir plus souvent.</p>
 			</div>
 		</section>
-		<section>
+		<section class="container">
 			<h2 id="me-contacter">Me contacter</h2>
 			<div>
 				<address>31 Rue d'Auteuil, Paris 16ème</address>
 				<p><a href="mailto:claire@helloworld.com">claire@helloworld.com</a></p>
 				<p><a href="tel:+33601030507">06 01 03 05 07</a></p>
 				<h3>Formulaire de contact</h3>
-				<form class="flex-3" action="index.html" method="post">
-					<div>
+				<form  action="index.html" method="post">
+					<div class="flex-3">
+						<div>
+							<fieldset class="fieldset-flex">
+								<label for="name"></label>
+								<input type="text" name="mail" id="name" placeholder="Votre nom">
+								<label for="mail"></label>
+								<input type="email" name="mail" id="mail" placeholder="Votre email">
+								<label for="tel" ></label>
+								<input type="tel" name="tel" id="tel" placeholder="Votre numéro de téléphone">
+							</fieldset>
+						</div>
 						<fieldset>
-							<label for="name"></label>
-							<input type="text" name="mail" id="name" placeholder="Votre nom">
-							<label for="mail"></label>
-							<input type="email" name="mail" id="mail" placeholder="Votre email">
-							<label for="tel" ></label>
-							<input type="tel" name="tel" id="tel" placeholder="Votre numéro de téléphone">
-						</fieldset>
-						<fieldset>
-							<textarea name="message" id="message" cols="30" rows="10"></textarea>
+							<textarea placeholder="Votre message" name="message" id="message" cols="30" rows="10"></textarea>
 						</fieldset>
 					</div>
-						<div><button type="submit">Envoyer</button></div>
+						<div class="button"><button type="submit">Envoyer</button></div>
 				</form>
 				<p>Suivez-moi sur :</p>
-				<p></p>
+				<p class="reseau"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #4267b2;"></i><i class="fa-brands fa-square-twitter fa-2xl" style="color: #1da1f2;"></i><i class="fa-brands fa-square-pinterest fa-2xl" style="color: #bd081c;"></i><i class="fa-brands fa-square-instagram fa-2xl" style="color: #b800b3;"></i></p>
 			</div>
 		</section>
 	</main>
 
 	<footer class="footer">
-		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="./logo-3wa.png"></a></p>
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img class="logo-3wa" alt="Propriété de la 3W Academy" src="./logo-3wa.png"></a></p>
 		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>.&nbsp; Cet exercice a été réalisé par Christiane Dumont.</p>
 		<p>Images fournies par Pixabay.</p>
 	</footer>

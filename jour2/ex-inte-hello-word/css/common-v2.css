@@ -34,29 +34,33 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
-	font-family: 'Lato',sans-serif;
+	font-weight:normal;
 	color: #333;
 	background-color: #fff;
+	font-family: 'Lato', sans-serif;
+
 }
 
 /* Le titre principal d'un flux */
 h1 {
-	font-size: 2.813rem;
+	font-size: 4.5rem;
 	color: #007eb3;
 	border-bottom: 0.063em dotted #007eb3;
 	word-spacing: 1rem;
 	text-align: center;
+	padding: 0.2em;
 }
 
 /* Le titre de second niveau  */
 h2 {
-	font-size: 1.875rem;
+	font-size: 3rem;
+	text-transform: uppercase;
 }
 
 
 /* Le titre de troisème niveau */
 h3 {
-	font-size: 1.563rem;
+	font-size: 2.5rem;
 }
 
 /* Les liens */
@@ -71,9 +75,8 @@ a:hover {
 }
 
 /* Contenu principal */
-main {
-	padding: 2em;
-}
+/*main {
+}*/
 
 
 
@@ -131,10 +134,12 @@ menu li a{
 
 /* Le pied de page */
 .footer {
-	padding: 2em;
+	padding: 0.8em;
 	text-align: center;
 	color: #fff;
 	background-color: #007eb3;
+	line-height: normal;
+
 }
 
 /* *****************************************************************
